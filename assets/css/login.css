@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/bg2.png') no-repeat center center/cover;
+    height: 100vh;
+}
+
+/* CENTER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* CARD */
+.login-box {
+    width: 350px;
+    padding: 35px 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+
+    color: white;
+    text-align: center;
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* TITLE */
+.login-box h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* INPUT */
+.input-group input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+    margin-top: 5px;
+
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+
+    background: transparent;
+    color: white;
+}
+
+/* PLACEHOLDER */
+.input-group input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* ROLE */
+.role-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.role-group input {
+    display: none;
+}
+
+.role-group label {
+    flex: 0 0 150px;
+    text-align: center;
+
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.role-group label:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.role-group input:checked + label {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+/* BUTTON */
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* REGISTER */
+.register {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.register a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+/* ERROR */
+.error {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
